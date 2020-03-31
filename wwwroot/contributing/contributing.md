@@ -1,23 +1,23 @@
 Title: Contributing
 ---
 
-# Before You Start 
+# Before You Start
 
 Drop into our [gitter chat room](https://gitter.im/AvaloniaUI/Avalonia) and let us know what you're thinking of doing. We might be able to give you guidance or let you know if someone else is already working on the feature.
 
 # Style
 
-The codebase uses [.net core](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md) coding style. 
+The codebase uses [.net core](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md) coding style.
 
 Try to keep lines of code around 100 characters in length or less, though this is not a hard limit.
-If you're a few characters over then don't worry too much. 
+If you're a few characters over then don't worry too much.
 
 **DO NOT USE #REGIONS** full stop.
 
 # Pull requests
 
 A single pull request should be submitted for each change. If you're making more than one change,
-please submit separate pull requests for each change for easy review. Rebase your changes to make 
+please submit separate pull requests for each change for easy review. Rebase your changes to make
 sense, so a history that looks like:
 
 * Add class A
@@ -33,9 +33,9 @@ Should be rebased to read:
 
 Again, this makes review much easier.
 
-Please try not to submit pull requests that don't add new features (e.g. moving stuff around) 
-unless you see something that is obviously wrong or that could be written in a more terse or 
-idiomatic style. It takes time to review each pull request - time that I'd prefer to spend writing 
+Please try not to submit pull requests that don't add new features (e.g. moving stuff around)
+unless you see something that is obviously wrong or that could be written in a more terse or
+idiomatic style. It takes time to review each pull request - time that I'd prefer to spend writing
 new features!
 
 Prefer terseness to verbosity but don't try to be too clever.
@@ -63,3 +63,8 @@ Render tests should describe what the produced image is:
 ```csharp
     void Rectangle_2px_Stroke_Filled()
 ```
+
+# Code of Conduct
+
+This project has adopted the code of conduct defined by the Contributor Covenant to clarify expected behavior in our community.
+For more information see the [Contributor Covenant Code of Conduct](https://dotnetfoundation.org/code-of-conduct)

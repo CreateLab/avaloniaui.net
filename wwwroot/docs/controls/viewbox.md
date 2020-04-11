@@ -1,6 +1,6 @@
-Title: Expander
+Title: Viewbox
 ---
 `Viewbox` is used to scale single child.
 
 # Source code
-[Expander.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/ViewBox.cs)
+[Viewbox.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/Viewbox.cs)

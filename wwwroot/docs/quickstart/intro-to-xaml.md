@@ -74,7 +74,7 @@ element. This could also be written as a property using:
 </Window>
 ```
 
-This is because [`Button.Content`](api/Avalonia.Controls/ContentControl/4B02A756) is declared as a
+This is because [`Button.Content`](/api/Avalonia.Controls/ContentControl/4B02A756) is declared as a
 _`[Content]` Property_ which means that any content placed inside its XML tag will be assigned to this
 property.
 

@@ -1,9 +1,8 @@
 Title: ComboBox
 ---
+A drop-down list control.
 
- A drop-down list control.
-
- # Common Properties
+# Common Properties
 
 |Property|Description|
 |--------|-----------|
@@ -15,14 +14,14 @@ Title: ComboBox
 |`IsDropDownOpen`|Gets or sets a value indicating whether the dropdown is currently open.|
 |`MaxDropDownHeight`|Gets or sets the maximum height for the dropdown list.|
 
- # Source code
+# Source code
 [ComboBox.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/ComboBox.cs)
 
 # Examples
 
- ## Basic ComboBox
- ```xml
- <Window xmlns="https://github.com/avaloniaui"
+## Basic ComboBox
+```xml
+<Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -38,11 +37,11 @@ Title: ComboBox
         </ComboBox>
     </StackPanel>
 </Window>
- ```
+```
 
-  ## ComboBox with custom item templates
- ```xml
- <Window xmlns="https://github.com/avaloniaui"
+## ComboBox with custom item templates
+```xml
+<Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -66,14 +65,14 @@ Title: ComboBox
       </ComboBox>
     </StackPanel>
 </Window>
- ```
+```
 
- ## ComboBox with binding
+## ComboBox with binding
 
 This example binds the fonts installed to a ComboBox
 
- ```xml
- <Window xmlns="https://github.com/avaloniaui"
+```xml
+<Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -90,12 +89,12 @@ This example binds the fonts installed to a ComboBox
        </ComboBox>
     </StackPanel>
 </Window>
- ```
+```
 
- With this code behind:
+With this code behind:
 
- ```cs
+```cs
 var fontComboBox = this.Find<ComboBox>("fontComboBox");
 fontComboBox.Items = FontManager.Current.GetInstalledFontFamilyNames().Select(x => new FontFamily(x));
 fontComboBox.SelectedIndex = 0;
- ```
+```

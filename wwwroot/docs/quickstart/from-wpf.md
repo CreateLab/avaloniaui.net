@@ -148,7 +148,7 @@ and error-prone](http://stackoverflow.com/questions/23682232).
 
 In Avalonia, there is no `PropertyChangedCallback` at the time of registration,
 instead a class listener is [added to the control's static constructor in much
-the same way that event class listeners are added](working-with-properties.md#subscribing-to-a-property-on-any-object).
+the same way that event class listeners are added](/docs/binding/binding-from-code#subscribing-to-a-property-on-any-object).
 
 # RenderTransforms and RenderTransformOrigin
 

@@ -7,7 +7,9 @@
 3. Clone the repository and descend into repository root folder.
 4. Use the command `wyam -i wwwroot` to build the website.
 
-Alternatively, use `build.cmd` on Windows or `build.sh` on MacOS/Linux for a **regular build**. Or use `fast-build-without-api.cmd` on Windows or `fast-build-without-api.sh` on MacOS/Linux for a **faster build** that does not generate the API contents.
+Alternatively, use `build.cmd` for a **regular build**. Or use `fast-build-without-api.cmd` for a **faster build** that does not generate the API contents. 
+
+Note: Use the respective `.sh` versions of the scripts for MacOS/Linux.
 
 # View Build Artifacts
 

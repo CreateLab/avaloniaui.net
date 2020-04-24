@@ -1,4 +1,4 @@
 ---
-Title: Authoring Controls
+Title: Advanced
 Order: 60
 ---

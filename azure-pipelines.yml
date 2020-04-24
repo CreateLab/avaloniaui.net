@@ -1,0 +1,13 @@
+pool:
+  vmImage: 'ubuntu-18.04'
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    version: '3.1.x'
+- task: DotNetCoreCLI@2
+  displayName: Build
+  inputs:
+    command: build
+    projects: 'AvaloniaUI.Net.sln'
+    arguments: '--configuration Release'

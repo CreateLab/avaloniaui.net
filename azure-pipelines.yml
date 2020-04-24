@@ -15,6 +15,7 @@ steps:
   inputs:
     command: publish
     projects: 'AvaloniaUI.Net.sln'
+    modifyOutputPath: false
     arguments: '-c Release -o publish'
 - bash: |
     rsync -avz --delete --chmod=755 -e "ssh -p22002" publish/ webmaster@5.9.120.99:/var/www/avaloniaui.net

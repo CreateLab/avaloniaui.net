@@ -1,0 +1,2 @@
+#!/bin/bash
+wyam preview

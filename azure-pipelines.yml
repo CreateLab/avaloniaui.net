@@ -5,11 +5,6 @@ steps:
 - task: UseDotNet@2
   inputs:
     version: '3.1.x'
-- task: InstallSSHKey@0
-  inputs:
-    knownHostsEntry: '[5.9.120.99]:22002 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFdCgWJs1vCpCInosOnWbGppJdgr16qlRCCB4Qj41QFb9Em+brt05tEQEugyWN6dTDUsUNRKP0DtCI5pQbsJQ0g='
-    sshPublicKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLQVKQlKqgxOQONfH6NwR1m/eAsrxsJJ7bERe2Tedu5hQdtkzfT4nKbkLIKw3I1d14ERq90m+0OXqD/M476CHWJhIsU4kLAEH9guyfyLyZHGhgBiZYEK3TWmX2cWL9fg4r2+UgsS0NsQNO49mNnC5fo8+9aWO755cOlfRwvsa4pR4IOGjlB/q562phVwZYb9CJR7GnK4VMQYAHfJY7PlxUe81hSFg2WL2TMU9fPEcsn+xM9MJ4xvCoSlNzw2MlPkIKL8DaG7JLN1uz5LPHMDwfII93hS2IYGdpgeIXdiY2iyMvx8zIWum2/RWbhhbzLcEgi5v4d4reaeu9oPngaLVn'
-    sshKeySecureFile: 'webmaster_rsa'
 - task: DotNetCoreCLI@2
   displayName: Build
   inputs:
@@ -18,6 +13,3 @@ steps:
     arguments: '-c Release -o publish'
     modifyOutputPath: false
     zipAfterPublish: false
-- bash: |
-    rsync -avz --delete --chmod=755 -e "ssh -p22002" publish/ webmaster@5.9.120.99:/var/www/avaloniaui.net
-  displayName: Deploy

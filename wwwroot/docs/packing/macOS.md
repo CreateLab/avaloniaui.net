@@ -208,7 +208,7 @@ SIGNING_IDENTITY="Developer ID: MyCompanyName" # matches Keychain Access certifi
 find "$APP_NAME/Contents/MacOS/"|while read fname; do
     if [[ -f $fname ]]; then
         echo "[INFO] Signing $fname"
-        codesign --force --timestamp --options=runtime --entitlements "$ENTITLEMENTS" --sign "$SIGNING_IDENTITY" $fname
+        codesign --force --timestamp --options=runtime --entitlements "$ENTITLEMENTS" --sign "$SIGNING_IDENTITY" "$fname"
     fi
 done
 

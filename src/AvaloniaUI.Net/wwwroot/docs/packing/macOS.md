@@ -204,12 +204,12 @@ Then, run this script to do all the code signing for you:
 #!/bin/bash
 APP_NAME="/path/to/your/output/MyApp.app"
 ENTITLEMENTS="/path/to/your/MyAppEntitlements.entitlements"
-SIGNING_IDENTIFY="Developer ID: MyCompanyName" # matches Keychain Access certificate name
+SIGNING_IDENTITY="Developer ID: MyCompanyName" # matches Keychain Access certificate name
 
 find "$APP_NAME/Contents/MacOS/"|while read fname; do
     if [[ -f $fname ]]; then
         echo "[INFO] Signing $fname"
-        codesign --force --timestamp --options=runtime --entitlements "$ENTITLEMENTS" --sign "$SIGNING_IDENTITY" $fname
+        codesign --force --timestamp --options=runtime --entitlements "$ENTITLEMENTS" --sign "$SIGNING_IDENTITY" "$fname"
     fi
 done
 

@@ -64,6 +64,10 @@ code {
   word-break: break-word;
 }
 
+td > code {
+  word-break: normal;
+}
+
 pre {
 }
 

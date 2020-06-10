@@ -121,7 +121,12 @@ namespace AvaloniaUI.Net.Pages.Docs
                 }
             }
 
-            result.Sort((x, y) => x.Order - y.Order);
+            result.Sort((x, y) =>
+            {
+                var order = x.Order - y.Order;
+                return order != 0 ? order : string.Compare(x.Title, y.Title);
+            });
+
             return result;
         }
 

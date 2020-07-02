@@ -66,6 +66,10 @@ article {
   max-height: 580px;
 }
 
+.featured-product .lightbox {
+  outline: none;
+}
+
 @media (min-width: 1024px) {
   /* Display sidebar as a column if > 1024px */
   .sidebar-container {

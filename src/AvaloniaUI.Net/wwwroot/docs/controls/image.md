@@ -14,6 +14,69 @@ To have a button that swaps the image it's showing based on its state, you could
 
 The declarative approaches keep images in memory and won't have to load them in on-demand, which will net you greater performance than a binding approach. However, every image you use must be defined within the XAML.
 
+#### Binding Converter Approach
+```csharp
+/// <summary>
+/// <para>
+/// Converts a string path to a bitmap asset.
+/// </para>
+/// <para>
+/// The asset must be in the same assembly as the program. If it isn't,
+/// specify "avares://<assemblynamehere>/" in front of the path to the asset.
+/// </para>
+/// </summary>
+public class BitmapAssetValueConverter : IValueConverter
+{
+    public static BitmapAssetValueConverter Instance = new BitmapAssetValueConverter();
+
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        if (value == null)
+            return null;
+
+        if (value is string rawUri && targetType == typeof(IBitmap))
+        {
+            Uri uri;
+
+            // Allow for assembly overrides
+            if (rawUri.StartsWith("avares://"))
+            {
+                uri = new Uri(rawUri);
+            }
+            else
+            {
+                string assemblyName = Assembly.GetEntryAssembly().GetName().Name;
+                uri = new Uri($"avares://{assemblyName}{rawUri}");
+            }
+
+            var assets = AvaloniaLocator.Current.GetService<IAssetLoader>();
+            var asset = assets.Open(uri);
+
+            return new Bitmap(asset);
+        }
+
+        throw new NotSupportedException();
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        throw new NotSupportedException();
+    }
+}
+```
+
+```
+<UserControl.Resources>
+    <ext:BitmapAssetValueConverter x:Key="variableImage"/>
+</UserControl.Resources>
+```
+
+```
+<Image Width="75"
+       Height="73"
+       Source="{Binding PlaySource, Converter={StaticResource variableImage}}">
+```
+
 #### Declarative Approaches
 
 ##### Using a Button

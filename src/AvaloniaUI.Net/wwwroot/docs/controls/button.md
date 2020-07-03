@@ -17,6 +17,9 @@ property. This command will be executed when the button is clicked. For more inf
 
 The Button control's full documentation can be found [here](/api/Avalonia.Controls/Button){target="_blank"}
 
+## Subclasses
+1. [ToggleButton](https://avaloniaui.net/docs/controls/drawingpresenter) - Toggles between checked and unchecked on click.
+
 ## Common Properties
 
 |Property|Description|

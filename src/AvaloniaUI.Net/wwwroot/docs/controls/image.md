@@ -5,6 +5,9 @@ The `Image` control is a control for displaying raster images.
 
 Binding on the `Image` control's `Source` property will not work unless you use a [binding converter](https://avaloniaui.net/docs/binding/converting-binding-values) that will convert a `string` into a `IBitmap`.
 
+## Subclasses
+1. [DrawingPresenter](https://avaloniaui.net/docs/controls/drawingpresenter) - Used to display svgs.
+
 ## Examples
 
 ### Swappable Image Button

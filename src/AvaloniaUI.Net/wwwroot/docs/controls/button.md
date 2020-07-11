@@ -77,6 +77,8 @@ produces following output with **Windows 10**
 ![Basic button](images/button_colors.png)
 
 ### Play button
+Toggles between a "Play" icon and a "Pause" icon on click.
+
 ```
 <UserControl.Resources>
     <Bitmap x:key="Play">/Assets/Player/Play.png</Bitmap>

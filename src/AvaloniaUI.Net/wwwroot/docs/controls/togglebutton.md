@@ -29,7 +29,7 @@ This button will show a speaker icon or an unmuted speaker icon based on whether
 ```
 <ToggleButton Classes="vtrx"  IsChecked="{Binding Path=vtrx.muted}" ToolTip.Tip="stop audio" >
     <Panel>
-        <DrawingPresenter Drawing="{DynamicResource Icon.Speaker}"/>
+        <DrawingPresenter Drawing="{DynamicResource Icon.Speaker}" Classes="tbunchecked"/>
         <DrawingPresenter Width="14" Height="14" Margin="14,14,0,0" Drawing="{DynamicResource Icon.SpeakerMute}" Classes="tbchecked"/>
     </Panel>
 </ToggleButton>

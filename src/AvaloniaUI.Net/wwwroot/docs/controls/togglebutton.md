@@ -9,7 +9,7 @@ The `ToggleButton` control is a subclass of the `Button` control that has a buil
 ## Examples
 
 ### Speaker Mute Button
-This button will show a speaker icon or an unmuted speaker icon based on whether the button is checked or unchecked, which the `ToggleButton` control toggles between when users click on the button.
+This button will show a muted speaker icon or an unmuted speaker icon based on whether the button is checked or unchecked, which the `ToggleButton` control toggles between when users click on the button.
 
 ```xml
 <Style Selector="ToggleButton DrawingPresenter.tbchecked">

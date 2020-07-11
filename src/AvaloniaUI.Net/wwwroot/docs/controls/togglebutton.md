@@ -11,7 +11,7 @@ The `ToggleButton` control is a subclass of the `Button` control that has a buil
 ### Speaker Mute Button
 This button will show a speaker icon or an unmuted speaker icon based on whether the button is checked or unchecked, which the `ToggleButton` control toggles between when users click on the button.
 
-```
+```xml
 <Style Selector="ToggleButton DrawingPresenter.tbchecked">
     <Setter Property="IsVisible" Value="false"/>
 </Style>
@@ -26,7 +26,7 @@ This button will show a speaker icon or an unmuted speaker icon based on whether
 </Style>
 ```
 
-```
+```xml
 <ToggleButton Classes="vtrx"  IsChecked="{Binding Path=vtrx.muted}" ToolTip.Tip="stop audio" >
     <Panel>
         <DrawingPresenter Drawing="{DynamicResource Icon.Speaker}" Classes="tbunchecked"/>

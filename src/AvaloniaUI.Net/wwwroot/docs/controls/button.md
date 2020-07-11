@@ -79,14 +79,14 @@ produces following output with **Windows 10**
 ### Play button
 Toggles between a "Play" icon and a "Pause" icon on click.
 
-```
+```xml
 <UserControl.Resources>
     <Bitmap x:key="Play">/Assets/Player/Play.png</Bitmap>
     <Bitmap x:key="Pause">/Assets/Player/Pause.png</Bitmap>
 </UserControl.Resources>
 ```
 
-```
+```xml
 <Button Name="PlayButton" HorizontalAlignment="Center" Width="36" Command="{Binding PlayCommand}">
     <Panel>
         <Image Source="{DynamicResource Play}" IsVisible="{Binding !IsPlaying}" Width="20"

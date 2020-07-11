@@ -26,8 +26,10 @@ This button will show a speaker icon or an unmuted speaker icon based on whether
 </Style>
 ```
 
+The style code above reacts to `ToggleButton`'s `:checked` pseudoclass, so that if the `ToggleButton` is checked, any `DrawingPresenter` with the class `.tbchecked` will be visible, and any `DrawingPresenter` with the class `.tbunchecked` will not be visible.
+
 ```xml
-<ToggleButton Classes="vtrx"  IsChecked="{Binding Path=vtrx.muted}" ToolTip.Tip="stop audio" >
+<ToggleButton Classes="vtrx" IsChecked="{Binding Path=vtrx.muted}" ToolTip.Tip="stop audio">
     <Panel>
         <DrawingPresenter Drawing="{DynamicResource Icon.Speaker}" Classes="tbunchecked"/>
         <DrawingPresenter Width="14" Height="14" Margin="14,14,0,0" Drawing="{DynamicResource Icon.SpeakerMute}" Classes="tbchecked"/>

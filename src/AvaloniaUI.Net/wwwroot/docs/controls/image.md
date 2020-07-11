@@ -4,10 +4,7 @@ Title: Image
 The `Image` control is a control for displaying raster images.
 
 ## Binding
-Binding onto an `Image` control's `Source` property with a string must be done using a [binding converter](https://avaloniaui.net/docs/binding/converting-binding-values) that will convert the `string` to an `IBitmap`.
-
-## Subclasses
-1. [DrawingPresenter](https://avaloniaui.net/docs/controls/drawingpresenter) - Used to display svgs.
+Binding onto an `Image` control's `Source` property with a `string` must be done using a [binding converter](https://avaloniaui.net/docs/binding/converting-binding-values) that will convert the `string` to an `IBitmap`.
 
 ## Examples
 
@@ -16,7 +13,7 @@ An image button that changes images based on state is an example where binding t
 
 To have a button that swaps the image it's showing based on its state, you could either use a [binding converter](https://avaloniaui.net/docs/binding/converting-binding-values) that converts a `string` into a `IBitmap`, or you could use the declarative approaches below, which don't use binding.
 
-The declarative approaches keep images in memory and won't have to load them in on-demand, which will net you greater performance than a binding approach. However, every image you use must be defined within the XAML.
+The declarative approaches keep images in memory and won't have to load them in on-demand, which will net you greater performance than a binding approach. You must declare every image you will use inside your XAML with the declarative approach.
 
 #### Binding Converter Approach
 ```xml

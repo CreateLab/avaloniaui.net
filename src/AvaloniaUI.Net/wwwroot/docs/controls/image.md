@@ -81,41 +81,10 @@ public class BitmapAssetValueConverter : IValueConverter
 #### Declarative Approaches
 
 ##### Using a Button
-```
-<Button Name="PlayButton" HorizontalAlignment="Center" Width="36" Command="{Binding PlayCommand}">
-    <Panel>
-        <Image Source="{DynamicResource Play}" IsVisible="{Binding !IsPlaying}" Width="20"
-                          Height="20" VerticalAlignment="Center" HorizontalAlignment="Center" />
-        <Image Source="{DynamicResource Pause}" IsVisible="{Binding IsPlaying}" Width="20"
-                          Height="20" VerticalAlignment="Center" HorizontalAlignment="Center" />
-    </Panel>
-</Button>
-```
+View the ["Play Button" example](https://avaloniaui.net/docs/controls/button#play-button) in the `Button` documentation.
 
 ##### Using a ToggleButton
-```
-<Style Selector="ToggleButton DrawingPresenter.tbchecked">
-    <Setter Property="IsVisible" Value="false"/>
-</Style>
-<Style Selector="ToggleButton:checked DrawingPresenter.tbchecked">
-    <Setter Property="IsVisible" Value="true"/>
-</Style>
-<Style Selector="ToggleButton DrawingPresenter.tbunchecked">
-    <Setter Property="IsVisible" Value="true"/>
-</Style>
-<Style Selector="ToggleButton:checked DrawingPresenter.tbunchecked">
-    <Setter Property="IsVisible" Value="false"/>
-</Style>
-```
-
-```
-<ToggleButton Classes="vtrx"  IsChecked="{Binding Path=vtrx.muted}" ToolTip.Tip="stop audio" >
-    <Panel>
-        <DrawingPresenter Drawing="{DynamicResource Icon.Speaker}" />
-        <DrawingPresenter Width="14" Height="14" Margin="14,14,0,0" Drawing="{DynamicResource Icon.SpeakerMute}" Classes="tbchecked"/>
-    </Panel>
-</ToggleButton>
-```
+View the ["Speaker Mute Button" example](https://avaloniaui.net/docs/controls/togglebutton#speaker-mute-button) in the ToggleButton documentation.
 
 ## Source code
 [Image.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/Image.cs)

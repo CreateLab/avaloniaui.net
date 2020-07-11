@@ -18,6 +18,18 @@ To have a button that swaps the image it's showing based on its state, you could
 The declarative approaches keep images in memory and won't have to load them in on-demand, which will net you greater performance than a binding approach. However, every image you use must be defined within the XAML.
 
 #### Binding Converter Approach
+```xml
+<UserControl.Resources>
+    <ext:BitmapAssetValueConverter x:Key="variableImage"/>
+</UserControl.Resources>
+```
+
+```xml
+<Image Width="75"
+       Height="73"
+       Source="{Binding PlaySource, Converter={StaticResource variableImage}}">
+```
+
 ```csharp
 /// <summary>
 /// <para>
@@ -66,18 +78,6 @@ public class BitmapAssetValueConverter : IValueConverter
         throw new NotSupportedException();
     }
 }
-```
-
-```
-<UserControl.Resources>
-    <ext:BitmapAssetValueConverter x:Key="variableImage"/>
-</UserControl.Resources>
-```
-
-```
-<Image Width="75"
-       Height="73"
-       Source="{Binding PlaySource, Converter={StaticResource variableImage}}">
 ```
 
 #### Declarative Approaches

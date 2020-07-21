@@ -237,16 +237,17 @@ For more information on customizing your notarization workflow and more flags yo
 The following steps were modified from [this StackOverflow post](https://stackoverflow.com/a/53121755/3938401):
 
 1. Make sure your `.app` is code signed properly
-2. Run `xcrun altool --notarize-app -f MyApp.app --primary-bundle-id com.identifier -u username -p password`. You can use a password in your keychain by passing `-p "@keychain:AC_PASSWORD", where AC_PASSWORD is the key. The account has to be registered as an Apple Developer.
-3. If the upload is successful, you'll get a UUID back for your request token like this: `28fad4c5-68b3-4dbf-a0d4-fbde8e6a078f`
-4. You can check notarization status using that token like this: `xcrun altool --notarization-info 28fad4c5-68b3-4dbf-a0d4-fbde8e6a078f -u username -p password`. This could take some time -- eventually it will succeed or fail.
-5. If it succeeds, you have to staple the notarization to the app: `xcrun stapler staple MyApp.app`. You can validate this by running `xcrun stapler validate MyApp.app`.
+2. Stick your `.app` in a `.zip` file, e.g. `MyApp.zip`.
+3. Run `xcrun altool --notarize-app -f MyApp.zip --primary-bundle-id com.unique-identifier-for-this-upload -u username -p password`. You can use a password in your keychain by passing `-p "@keychain:AC_PASSWORD"`, where AC_PASSWORD is the key. The account has to be registered as an Apple Developer.
+4. If the upload is successful, you'll get a UUID back for your request token like this: `28fad4c5-68b3-4dbf-a0d4-fbde8e6a078f`
+5. You can check notarization status using that token like this: `xcrun altool --notarization-info 28fad4c5-68b3-4dbf-a0d4-fbde8e6a078f -u username -p password`. This could take some time -- eventually it will succeed or fail.
+6. If it succeeds, you have to staple the notarization to the app: `xcrun stapler staple MyApp.app`. You can validate this by running `xcrun stapler validate MyApp.app`.
 
 Once notarization is complete, you should be able to distribute your application!
 
 Note that if you distribute your app in a `.dmg`, you will want to modify the steps slightly:
 
-1. Notarize your `.app` as normal
-2. Add your notarized and stapled (`xcrun stapler`) to the DMG.
-3. Notarize your `.dmg` file
+1. Notarize your `.app` as normal (in a `.zip` file)
+2. Add your notarized and stapled (`xcrun stapler`) app into the DMG (the DMG now has the notarized/stapled `.app` file inside of it).
+3. Notarize your `.dmg` file (same basic `xcrun altool` command, just with the `.dmg` file for the `-f` flag instead of the `.zip`)
 4. Staple the notarization to the `.dmg` file: `xcrun stapler staple MyApp.dmg`.

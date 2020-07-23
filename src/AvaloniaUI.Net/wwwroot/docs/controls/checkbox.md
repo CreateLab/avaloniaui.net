@@ -12,8 +12,7 @@ The `CheckBox` control is a [`ContentControl`](contentcontrol) which allows user
 
 ## Source code
 
-[CheckBox.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/CheckBox.cs)  
-[ToggleButton.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/Primitives/ToggleButton.cs)
+[CheckBox.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/CheckBox.cs)
 
 ## Examples
 

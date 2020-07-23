@@ -36,9 +36,11 @@ been rendered at around 22 dip height. With the `Viewbox` it will be displayed w
 |Uniform      |The content is resized to fit in the destination dimensions while preserving its native aspect ratio.|
 |UniformToFill|The content is resized to completely fill the destination rectangle while preserving its native aspect ratio. A portion of the content may not be visible if the aspect ratio of the content does not match the aspect ratio of the allocated space.|
 
-
-# Pseudoclasses
-
+## Pseudoclasses
 None
-# Source code
+
+## Reference
+[Viewbox](http://reference.avaloniaui.net/api/Avalonia.Controls/Viewbox/)
+
+## Source code
 [Viewbox.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/Viewbox.cs)

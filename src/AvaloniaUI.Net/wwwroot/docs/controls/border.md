@@ -35,5 +35,8 @@ An example of a border with a red background, 2 pixel black border, 3 pixel corn
 
 None
 
+## Reference
+[Border](http://reference.avaloniaui.net/api/Avalonia.Controls/Border/)
+
 ## Source code
 [Border.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/Border.cs)

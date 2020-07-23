@@ -10,6 +10,9 @@ The [`ContentControl`](/api/Avalonia.Controls/ContentControl) displays data acco
 |--------|-----------|
 |`Content`|The content to display in the control|
 
+## Reference
+[ContentControl](http://reference.avaloniaui.net/api/Avalonia.Controls/ContentControl/)
+
 ## Source code
 
 [ContentControl.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/ContentControl.cs)

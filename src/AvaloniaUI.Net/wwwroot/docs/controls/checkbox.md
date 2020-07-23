@@ -10,6 +10,9 @@ The `CheckBox` control is a [`ContentControl`](contentcontrol) which allows user
 |`IsChecked`|Is `CheckBox` checked|
 |`IsThreeState`|Is `CheckBox` in three state mode|
 
+## Reference
+[Checkbox](http://reference.avaloniaui.net/api/Avalonia.Controls/Checkbox/)
+
 ## Source code
 
 [CheckBox.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/CheckBox.cs)  

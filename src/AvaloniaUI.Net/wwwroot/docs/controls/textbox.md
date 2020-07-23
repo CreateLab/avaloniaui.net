@@ -3,6 +3,9 @@ Title: Textbox
 ---
 The `TextBox` control is an editable text field where a user can input text.
 
+## Reference
+[TextBox](http://reference.avaloniaui.net/api/Avalonia.Controls/TextBox/)
+
 ## Source code
 [TextBox.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/TextBox.cs)
 

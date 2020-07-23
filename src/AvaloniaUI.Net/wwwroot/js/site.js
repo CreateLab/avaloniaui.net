@@ -40,7 +40,9 @@ $(function () {
     // Carousel.
     $('.carousel').slick({
         dots: true,
-        arrows: false
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000
     });
 
     // Lightbox

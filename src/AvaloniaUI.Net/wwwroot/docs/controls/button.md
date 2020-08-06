@@ -17,6 +17,9 @@ property. This command will be executed when the button is clicked. For more inf
 
 The Button control's full documentation can be found [here](/api/Avalonia.Controls/Button){target="_blank"}
 
+## Subclasses
+1. [ToggleButton](https://avaloniaui.net/docs/controls/drawingpresenter) - Toggles between checked and unchecked on click.
+
 ## Common Properties
 
 |Property|Description|
@@ -75,6 +78,27 @@ produces following output with **Windows 10**
 ```
 produces following output with **Windows 10**  
 ![Basic button](images/button_colors.png)
+
+### Play button
+Toggles between a "Play" icon and a "Pause" icon on click.
+
+```xml
+<UserControl.Resources>
+    <Bitmap x:key="Play">/Assets/Player/Play.png</Bitmap>
+    <Bitmap x:key="Pause">/Assets/Player/Pause.png</Bitmap>
+</UserControl.Resources>
+```
+
+```xml
+<Button Name="PlayButton" HorizontalAlignment="Center" Width="36" Command="{Binding PlayCommand}">
+    <Panel>
+        <Image Source="{DynamicResource Play}" IsVisible="{Binding !IsPlaying}" Width="20"
+                          Height="20" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Image Source="{DynamicResource Pause}" IsVisible="{Binding IsPlaying}" Width="20"
+                          Height="20" VerticalAlignment="Center" HorizontalAlignment="Center" />
+    </Panel>
+</Button>
+```
 
 ### Binding to a View Model Command
  It is possible to bind a view model command to a simple method or with a ReactiveCommand. There are lots of advantages to the ReactiveCommand binding for all but the simplest user interfaces such as being able to pass an `IObservable<bool>` object in to have it dynamically calculate state.  Both methods are displayed below.  First the "simple" method binding:

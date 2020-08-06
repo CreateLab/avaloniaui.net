@@ -6,8 +6,8 @@ Order: 40
 `UserControl` represents a "view" in Avalonia, which is a reusable collection of controls in a
 predefined layout.
 
-A `UserControl` usually consists of two parts: a XAML file (e.g. `MyUserControl.xaml`) and a
-codebehind file (e.g. `MyUserControl.xaml.cs`). The codebehind defines a .NET class which
+A `UserControl` usually consists of two parts: a XAML file (e.g. `MyUserControl.axaml`) and a
+codebehind file (e.g. `MyUserControl.axaml.cs`). The codebehind defines a .NET class which
 represents the control.
 
 `UserControl`s are often paired with "view models" when using the MVVM pattern. For more

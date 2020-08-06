@@ -14,6 +14,9 @@ The `ToolTip` is a control that pops up with hint text when hovered over the app
 |`ShowDelay`|Gets or sets the delay for the tooltip to appear. Default value is 400.|
 |`IsOpen`|Gets or sets a value indicating whether the tooltip is currently showing.|
 
+## Reference
+[ToolTip](http://reference.avaloniaui.net/api/Avalonia.Controls/ToolTip/)
+
 ## Source code
 [ToolTip.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/ToolTip.cs)
 

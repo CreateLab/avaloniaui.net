@@ -34,6 +34,9 @@ The Button control's full documentation can be found [here](/api/Avalonia.Contro
 |-----------|-----------|
 |`:pressed`|Set when the button is depressed|
 
+## Reference
+[Button](http://reference.avaloniaui.net/api/Avalonia.Controls/Button/)
+
 ## Source code
 [Button.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/Button.cs)
 

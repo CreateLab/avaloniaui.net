@@ -4,6 +4,9 @@ Title: Grid
 The `Grid` control is a `Panel` control useful for organizing other controls in columns and rows. `ColumnDefinition` and `RowDefinition` properties are used to define absolute, relative, or proportional row and column geometries for the grid.
 Each control in the grid will be placed using the `Grid.Column` and `Grid.Row` additional properties. It is also possible to have controls that span multiple rows and/or columns by using the `ColumnSpan` and `RowSpan` properties.
 
+## Reference
+[Grid](http://reference.avaloniaui.net/api/Avalonia.Controls/Grid/)
+
 ## Source code
 [Grid.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/Grid.cs)
 

@@ -17,6 +17,9 @@ how to create new window classes from templates see the [quickstart](/docs/quick
 |`SizeToContent`|Describes the window's auto-sizing behavior|
 |`WindowState`|The minimized/maximized state of the window|
 
+## Reference
+[Window](http://reference.avaloniaui.net/api/Avalonia.Controls/Window/)
+
 ## Source code
 [Window.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/Window.cs)
 

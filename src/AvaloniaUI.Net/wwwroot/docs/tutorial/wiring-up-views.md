@@ -9,10 +9,10 @@ do this by making use of Avalonia's [data binding](/docs/binding) feature.
 ## Update MainWindow
 
 We're exposing the list in `MainWindowViewModel.List` so let's use that property to display the
-list in `MainWindow.xaml`.
+list in `MainWindow.axaml`.
 
 :::filename
-Views/MainWindow.xaml
+Views/MainWindow.axaml
 :::
 ```xml
 <Window xmlns="https://github.com/avaloniaui"
@@ -34,7 +34,7 @@ Content="{Binding List}"
 ```
 
 `{Binding}` is a markup extension which instantiates a [binding](/docs/binding/bindings) to a 
-property on a control's `DataContext`. You'll remember that in `App.xaml.cs` we [assigned an
+property on a control's `DataContext`. You'll remember that in `App.axaml.cs` we [assigned an
 instance of `MainWindowViewModel` to the window's `DataContext` property](/docs/tutorial/creating-model-viewmodel#create-an-instance-of-todolistviewmodel).
 
 :::note
@@ -59,7 +59,7 @@ Is _exactly_ the same as writing:
 Now we need to make `TodoListView` get the list of TODO items from the view model:
 
 :::filename
-Views/TodoListView.xaml
+Views/TodoListView.axaml
 :::
 ```xml
 <UserControl xmlns="https://github.com/avaloniaui"

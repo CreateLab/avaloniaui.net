@@ -35,10 +35,10 @@ dotnet new avalonia.usercontrol -o Views -n TodoListView  --namespace Todo.Views
 ## The UserControl
 
 The template should create a XAML file with the following contents in the `Views` directory,
-alongside `MainWindow.xaml`.
+alongside `MainWindow.axaml`.
 
 :::filename
-Views/TodoListView.xaml
+Views/TodoListView.axaml
 :::
 ```xml
 <UserControl xmlns="https://github.com/avaloniaui"
@@ -51,12 +51,12 @@ Views/TodoListView.xaml
 </UserControl>
 ```
 
-Alongside the XAML, you will also find a `TodoListView.xaml.cs` file containing the code-behind
+Alongside the XAML, you will also find a `TodoListView.axaml.cs` file containing the code-behind
 for the view (in Visual Studio this is nested under the XAML file so click the expander next to
 the XAML file in Solution Explorer to see it):
 
 :::filename
-Views/TodoListView.xaml.cs
+Views/TodoListView.axaml.cs
 :::
 ```csharp
 using Avalonia;
@@ -85,10 +85,10 @@ called `TodoListView` and it's located in the `Todo.Views` namespace.
 
 ## Edit the UserControl
 
-Edit the contents of `Views/TodoListView.xaml` to contain the following:
+Edit the contents of `Views/TodoListView.axaml` to contain the following:
 
 :::filename
-Views/TodoListView.xaml
+Views/TodoListView.axaml
 :::
 ```xml
 <UserControl xmlns="https://github.com/avaloniaui"
@@ -196,10 +196,10 @@ controls a margin to separate them a little bit visually.
 ## Display the view in the Window
 
 To see the view we've just created, we need to add it to the application's main window. Open the
-`Views/MainWindow.xaml` file and edit it to have the following content:
+`Views/MainWindow.axaml` file and edit it to have the following content:
 
 :::filename
-Views/MainWindow.xaml
+Views/MainWindow.axaml
 :::
 ```xml
 <Window xmlns="https://github.com/avaloniaui"

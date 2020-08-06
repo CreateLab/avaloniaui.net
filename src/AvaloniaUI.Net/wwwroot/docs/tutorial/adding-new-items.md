@@ -14,7 +14,7 @@ We start by creating the view
 for a refresher on how to create a `UserControl` using a template):
 
 :::filename
-Views/AddItemView.xaml
+Views/AddItemView.axaml
 :::
 ```xml
 <UserControl xmlns="https://github.com/avaloniaui"
@@ -116,7 +116,7 @@ We now want to bind our `Window.Content` property to this new `Content` property
 `List` property that it is currently bound to:
 
 :::filename
-Views/MainWindow.xaml
+Views/MainWindow.axaml
 :::
 ```xml{7}
 <Window xmlns="https://github.com/avaloniaui"
@@ -132,7 +132,7 @@ Views/MainWindow.xaml
 And finally we need to make the "Add an item" button call `MainWindowViewModel.AddItem()`.
 
 :::filename
-Views/TodoListView.xaml
+Views/TodoListView.axaml
 :::
 ```xml{9}
 <UserControl xmlns="https://github.com/avaloniaui"

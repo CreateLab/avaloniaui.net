@@ -7,7 +7,7 @@ Hold on, rewind a second. An observant reader will have noticed something strang
 [in the last section](/docs/tutorial/wiring-up-views#update-mainwindow).
 
 :::filename
-Views/MainWindow.xaml
+Views/MainWindow.axaml
 :::
 ```xml{8}
 <Window xmlns="https://github.com/avaloniaui"

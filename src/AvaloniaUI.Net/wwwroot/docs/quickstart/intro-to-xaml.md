@@ -21,6 +21,8 @@ use our own file extension in Visual Studio.
 
 Both `.xaml` and `.axaml` will be supported going foward, so feel free to use the extension you prefer.
 
+For more information see https://github.com/AvaloniaUI/Avalonia/issues/4102.
+
 ## Format of an Avalonia XAML File
 
 A basic Avalonia XAML file looks like this:

@@ -13,7 +13,7 @@ many UI framworks.
 
 ## XAML or AXAML file?
 
-The standard extension for XAML files is `.xaml`, however if you're using the [Visual Studio extension](docs/quickstart/vs-designer)
+The standard extension for XAML files is `.xaml`, however if you're using the [Visual Studio extension](vs-designer)
 then you may notice that from version 0.9.11, XAML files are created with the `.axaml` extension.
 This is because Visual Studio has functionality related to files with the `.xaml` extension that
 is hard-coded to Microsoft XAML dialects and can't be overridden. For this reason we were forced to

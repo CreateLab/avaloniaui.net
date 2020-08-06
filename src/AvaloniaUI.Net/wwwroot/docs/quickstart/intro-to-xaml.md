@@ -11,6 +11,16 @@ many UI framworks.
   or [Microsoft XAML documentation for UWP](https://docs.microsoft.com/en-us/windows/uwp/xaml-platform/xaml-overview) -
   many of the concepts are the same between frameworks.
 
+## XAML or AXAML file?
+
+The standard extension for XAML files is `.xaml`, however if you're using the [Visual Studio extension](docs/quickstart/vs-designer)
+then you may notice that from version 0.9.11, XAML files are created with the `.axaml` extension.
+This is because Visual Studio has functionality related to files with the `.xaml` extension that
+is hard-coded to Microsoft XAML dialects and can't be overridden. For this reason we were forced to
+use our own file extension in Visual Studio.
+
+Both `.xaml` and `.axaml` will be supported going foward, so feel free to use the extension you prefer.
+
 ## Format of an Avalonia XAML File
 
 A basic Avalonia XAML file looks like this:

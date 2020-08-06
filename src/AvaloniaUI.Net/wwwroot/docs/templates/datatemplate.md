@@ -95,7 +95,7 @@ Every control also has a `DataTemplates` collection into which any number of dat
 be placed. If a control doesn't have a template set locally (e.g. in `ContentTemplate`) then it
 will look in its `DataTemplates` collection for a matching template. If a match isn't found there
 it will then go on to search its parent's `DataTemplates`, then its grandparent's, and so on until
-it reaches the `Window`. If it _still_ hasn't found a match it will then look in `App.xaml` for
+it reaches the `Window`. If it _still_ hasn't found a match it will then look in `App.xaml`/`App.axaml` for
 a matching `DataTemplate` and finally when all those options have been exhausted it will simply
 call `.ToString()` on the object.
 
@@ -128,7 +128,7 @@ Using the `DataTemplates` collection the previous example could be written as:
 
 Using this mechanism, if you want to reuse a `DataTemplate` everywhere in a `Window` you can
 specify it in `Window.DataTemplates`; if you want the template to be used throughout the whole
-application you can specify it in `App.xaml` in the `Application.DataTemplates` collection.
+application you can specify it in `App.xaml`/`App.axaml` in the `Application.DataTemplates` collection.
 
 Now lets add another view model into the mix:
 

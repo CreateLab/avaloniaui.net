@@ -5,11 +5,11 @@ The `NumericUpDown` is an editable numeric input field.
 The control has a up and down button spinner attached, used to increment and decrement the value in the input field. 
 The value can also be incremented or decremented using the arrow keys or the mouse wheel when the control is selected.
 
+## Reference
+[NumericUpDown](http://reference.avaloniaui.net/api/Avalonia.Controls/NumericUpDown/)
+
 ## Source code
 [NumericUpDown.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/NumericUpDown/NumericUpDown.cs)
-
-## API
-[NumericUpDown API](http://reference.avaloniaui.net/api/Avalonia.Controls/NumericUpDown/)
 
 # Examples
 

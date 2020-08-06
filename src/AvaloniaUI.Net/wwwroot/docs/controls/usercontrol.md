@@ -18,5 +18,8 @@ an application. For information on how to create new `UserControl` classes from 
 |--------|-----------|
 |`Content`|The content to display in the control|
 
+## Reference
+[UserControl](http://reference.avaloniaui.net/api/Avalonia.Controls/UserControl/)
+
 ## Source code
 [UserControl.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/UserControl.cs)

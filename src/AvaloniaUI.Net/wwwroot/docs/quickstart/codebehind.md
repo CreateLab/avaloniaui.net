@@ -4,7 +4,7 @@ Order: 25
 ---
 
 [Window](/docs/window) and [UserControl](/docs/usercontrol) files also have an associated
-_code-behind_ file which usually has the extension `.xaml.cs` and may be displayed collapsed under
+_code-behind_ file which usually has the extension `.xaml.cs` or `.axaml.cs` and may be displayed collapsed under
 the XAML file in your editor. Below you can see a `MainWindow.xaml` file along with its markdown
 file `MainWindow.xaml.cs` in Visual Studio:
 

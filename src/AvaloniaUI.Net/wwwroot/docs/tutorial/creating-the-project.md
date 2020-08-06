@@ -35,8 +35,8 @@ The newly created project will be pre-filled with a number of files and director
 
 ```
 Todo
- |- App.xaml
- |- App.xaml.cs
+ |- App.axaml
+ |- App.axaml.cs
  |- Assets
  |   |- avalonia-logo.ico
  |- Models 
@@ -48,8 +48,8 @@ Todo
  |   |- MainWindowViewModel.cs
  |   |- ViewModelBase.cs
  |- Views
- |   |- MainWindow.xaml
- |   |- MainWindow.xaml.cs
+ |   |- MainWindow.axaml
+ |   |- MainWindow.axaml.cs
 ```
 
 You can see there are directories for each of the concepts in the MVVM pattern (models, views and view models) as well as couple of other files and directories:
@@ -58,10 +58,17 @@ You can see there are directories for each of the concepts in the MVVM pattern (
 - The **Models** directory is currently empty, but as the name suggests this is where we'll be putting our models.
 - The **ViewModels** directory is pre-filled with a base class for view models and a view model for the application main window.
 - The **Views** directory just contains the application main window for now.
-- The **App.xaml** file is where XAML styles and templates that will apply to the entire application will be placed.
+- The **App.axaml** file is where XAML styles and templates that will apply to the entire application will be placed.
 - The **Program.cs** file is the entry point for execution of the application. Here you can configure the platform options for Avalonia if necessary.
 - The **ViewLocator.cs** file is used to look up views for view models. This will be explained in more detail later.
 
 <a class="btn btn-primary" role="button" href="creating-a-view">
     Next
 </a>
+
+## .xaml file or .axaml file?
+
+In this tutorial we will use the `.axaml` file extension for XAML files which is what will be
+created by the Visual Studio extension. If you're using the .NET Core CLI, the extension will be
+`.xaml`. See the [Intro to XAML](https://localhost:5001/docs/quickstart/intro-to-xaml#xaml-or-axaml-file)
+page for information on why this happens.

@@ -147,7 +147,7 @@ namespace Todo.ViewModels
 }
 ```
 
-Finally, edit the `OnFrameworkInitializationCompleted` method in `App.xaml.cs` to create an instance
+Finally, edit the `OnFrameworkInitializationCompleted` method in `App.axaml.cs` to create an instance
 of `Database` and pass it to `MainWindowViewModel`:
 
 ```csharp

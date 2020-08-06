@@ -9,7 +9,7 @@ and control and then refer to these resources elsewhere.
 
 ## Declaring resources
 
-If a resource is to be available to your entire application, you can define it in `App.xaml`:
+If a resource is to be available to your entire application, you can define it in `App.xaml`/`App.axaml`:
 
 ```xml
 <Application xmlns="https://github.com/avaloniaui"

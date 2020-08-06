@@ -22,6 +22,7 @@
 
 article {
   padding: var(--padding-large);
+  line-height: 1.75;
 }
 
   article img {

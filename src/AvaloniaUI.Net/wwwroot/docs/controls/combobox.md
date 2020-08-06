@@ -15,6 +15,9 @@ A drop-down list control.
 |`IsDropDownOpen`|Gets or sets a value indicating whether the dropdown is currently open.|
 |`MaxDropDownHeight`|Gets or sets the maximum height for the dropdown list.|
 
+## Reference
+[ComboBox](http://reference.avaloniaui.net/api/Avalonia.Controls/ComboBox/)
+
 # Source code
 [ComboBox.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/ComboBox.cs)
 

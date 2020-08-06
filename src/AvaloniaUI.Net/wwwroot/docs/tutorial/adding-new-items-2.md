@@ -107,7 +107,7 @@ We can now bind the OK and Cancel buttons in the view to the `Ok` and `Cancel` c
 created on the view model:
 
 :::filename
-Views/AddItemView.xaml
+Views/AddItemView.axaml
 :::
 ```xml{8-9}
 <UserControl xmlns="https://github.com/avaloniaui"

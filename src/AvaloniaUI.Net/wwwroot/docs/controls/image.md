@@ -86,5 +86,8 @@ View the ["Play Button" example](https://avaloniaui.net/docs/controls/button#pla
 ##### Using a ToggleButton
 View the ["Speaker Mute Button" example](https://avaloniaui.net/docs/controls/togglebutton#speaker-mute-button) in the ToggleButton documentation.
 
+## Reference
+[Image](http://reference.avaloniaui.net/api/Avalonia.Controls/Image/)
+
 ## Source code
 [Image.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/Image.cs)

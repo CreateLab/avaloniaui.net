@@ -47,5 +47,8 @@ if you want wrapping text in the items) you can disable the horizontal scrollbar
 
 ```
 
+## Reference
+[ListBox](http://reference.avaloniaui.net/api/Avalonia.Controls/ListBox/)
+
 ## Source code
 [ListBox.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/ListBox.cs)

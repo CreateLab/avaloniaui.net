@@ -16,6 +16,9 @@ The `Calendar` control is a standard Calendar control for users to select date(s
 |`DisplayDateEnd`|Gets or sets the last date to be displayed.|
 |`BlackoutDates`|Gets a collection of dates that are marked as not selectable.|
 
+## Reference
+[Calendar](http://reference.avaloniaui.net/api/Avalonia.Controls/Calendar/)
+
 ## Source code
 [Calendar.cs](https://github.com/AvaloniaUI/Avalonia/blob/master/src/Avalonia.Controls/Calendar/Calendar.cs)
 

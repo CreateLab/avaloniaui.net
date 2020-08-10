@@ -59,4 +59,4 @@ In addition, most applications will add _services_ to this mix, which usually im
 
 ## Frameworks
 
-There are a number of frameworks designed to help write applications using the MVVM pattern. [ReactiveUI](https://reactiveui.net/) is one of the most popular and has support for Avalonia which can be added via the [Avalonia.ReactiveUI NUGet package](packages).
+There are a number of frameworks designed to help write applications using the MVVM pattern. [ReactiveUI](https://reactiveui.net/) is one of the most popular and has support for Avalonia which can be added via the [Avalonia.ReactiveUI NuGet package](packages).

@@ -7,6 +7,8 @@ Styles in Avalonia are used to share property settings between controls. The Ava
 system can be thought of as a mix of CSS styling and WPF/UWP styling. At its most basic, a
 style consists of a _selector_ and a collection of _setters_. 
 
+A style applies to the control that it is defined on and all descendent controls.
+
 The following style selects any `TextBlock` with a `h1` _style class_ and sets its font size to 24
 point and font weight to bold:
 
@@ -35,7 +37,34 @@ Styles can be defined on any control or on the `Application` object by adding th
 </Window>
 ```
 
-A style applies to the control that it is defined on and all descendent controls.
+Styles can also be included from other files using the `StyleInclude` class, e.g.:
+
+```xml
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Window.Styles>
+        <StyleInclude Source="/CustomStyles.xaml" />
+    </Window.Styles>
+
+    <TextBlock Classes="h1">I'm a Heading!</TextBlock>
+</Window>
+```
+
+Where `CustomStyles.xaml` is a XAML file with a root of either `Style` or `Styles` and is included
+as an [asset](/docs/quickstart/assets) in the application, e.g.:
+
+:::filename
+CustomStyles.xaml
+:::
+
+```xml
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style Selector="TextBlock.h1">
+        ...
+    </Style>
+</Styles>
+```
 
 :::note
 Note that unlike WPF/UWP, styles will have no effect if they're added to a control or application

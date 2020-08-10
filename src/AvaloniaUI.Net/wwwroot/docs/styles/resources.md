@@ -124,7 +124,7 @@ property. To include a resource dictionary in another you can use the `ResourceI
 ```
 
 Where `AnotherResourceDictionary` is a XAML file with a root of `ResourceDictionary` and is
-included as an asset in the application.
+included as an [asset](/docs/quickstart/assets) in the application.
 
 ## Resource resolution
 

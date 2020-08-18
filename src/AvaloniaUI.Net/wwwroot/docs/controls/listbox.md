@@ -47,6 +47,25 @@ if you want wrapping text in the items) you can disable the horizontal scrollbar
 
 ```
 
+## Customizing the container
+
+Whatever data is displayed in a `ListBox` is wrapped in a `ListBoxItem`. This control implements
+displaying the selection state for individual items in the `ListBox`.
+
+Sometimes you may need to modify the style of the `ListBoxItem`. In WPF this is done using the
+`ItemContainerStyle` property, but Avalonia doesn't have this property. Instead add a style for
+`ListBoxItem` as follows:
+
+```xml
+<ListBox>
+  <ListBox.Styles>
+    <Style Selector="ListBoxItem">
+        <!-- setters here -->
+    </Style>
+  </ListBox.Styles>
+</ListBox>
+```
+
 ## Reference
 [ListBox](http://reference.avaloniaui.net/api/Avalonia.Controls/ListBox/)
 

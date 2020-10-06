@@ -20,7 +20,7 @@ point and font weight to bold:
 ```
 
 Styles can be defined on any control or on the `Application` object by adding them to the 
-[`Control.Styles`](/api/Avalonia.Controls/Control/4145DF25) or 
+[`Control.Styles`](/api/Avalonia/StyledElement/0A46A84A) or 
 [`Application.Styles`](/api/Avalonia/Application/04017CAF) collections.
 
 ```xml

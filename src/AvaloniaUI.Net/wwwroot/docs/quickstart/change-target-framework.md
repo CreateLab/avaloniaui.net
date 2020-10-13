@@ -4,7 +4,7 @@ Order: 10
 ---
 By default, our project templates target the following frameworks:
 
-- **Visual Studio Extension**: .NET Core 3.0
+- **Visual Studio Extension**: .NET Core 3.1
 - **.NET Core Templates**: .NET Core 3.0
 
 You can change the frameworks that your project targets by opening the `.csproj` file and editing

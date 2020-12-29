@@ -1,14 +1,28 @@
-[![Build Status](https://dev.azure.com/AvaloniaUI/avaloniaui.net/_apis/build/status/avaloniaui.net)](https://dev.azure.com/AvaloniaUI/avaloniaui.net/_build/latest?definitionId=1)
+# avaloniaui.net - Avalonia UI Website
 
-# Manual Build Instructions
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/AvaloniaUI/Avalonia?utm_campaign=pr-badge&utm_content=badge&utm_medium=badge&utm_source=badge)
 
-1. Make sure you have [latest .NET Core SDK](https://dotnet.microsoft.com/) installed on your PC
-2. Install the `Wyam.Tool` .NET Core Global Tool via `dotnet tool install -g Wyam.Tool`
-3. Clone the repository and descend into repository root folder.
-4. Use the command `wyam -i wwwroot` to build the website.
+Source files for the [AvaloniaUI.net](https://avaloniaui.net/) website.
 
-# View Build Artifacts
+This is an ASP.Net Core project based on Razor Pages and Markdown files rendering.
 
-Use `wyam preview` to view what's built, or double-click `serve.cmd`.
+## Prerequisites
 
-Open `http://localhost:5080` in your browser!
+- .Net Core 3.1
+- Visual Studio 2019 or Visual Studio Code 
+
+## Building and running
+
+### Visual Studio
+
+Hit the Start Debugging button.
+
+### .Net CLI
+
+Open a terminal into the `src\AvaloniaUI.Net` subfolder and run the following command:
+
+```
+dotnet run
+```
+
+This will start the website at [http://localhost:5000](http://localhost:5000) and [https://localhost:5001](https://localhost:5001).
